@@ -1,0 +1,6 @@
+# robots.txt for walshpsychology.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://walshpsychology.com/sitemap.xml
