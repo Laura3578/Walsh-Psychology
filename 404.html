@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Page Not Found | Walsh Psychology</title>
+  <meta name="description" content="The page you were looking for could not be found. Return to Walsh Psychology.">
+  <link rel="icon" type="image/png" href="walsh_logo_final.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-hero {
+      min-height: 100vh;
+      background: #1b2d4a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 8rem 4rem 6rem;
+      text-align: center;
+    }
+    .error-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(184,92,56,0.14) 0%, transparent 65%),
+                  radial-gradient(ellipse 40% 60% at 20% 80%, rgba(143,163,177,0.08) 0%, transparent 60%);
+    }
+    .error-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      animation: fadeUp 0.8s 0.2s both;
+    }
+    .error-code {
+      font-family: var(--serif);
+      font-size: clamp(7rem, 20vw, 14rem);
+      font-weight: 300;
+      line-height: 1;
+      color: rgba(232,220,200,0.12);
+      letter-spacing: -0.04em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 0;
+    }
+    .error-eyebrow {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 1.8rem;
+      animation: fadeUp 0.7s 0.2s both;
+    }
+    .error-title {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--cream);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.8s 0.35s both;
+    }
+    .error-title em {
+      font-style: italic;
+      color: var(--sand);
+    }
+    .error-body {
+      font-size: 0.95rem;
+      line-height: 1.9;
+      color: var(--mist);
+      margin-bottom: 3rem;
+      animation: fadeUp 0.8s 0.5s both;
+    }
+    .error-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeUp 0.8s 0.65s both;
+    }
+    .error-divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(184,92,56,0.5);
+      margin: 0 auto 2rem;
+      animation: fadeUp 0.7s 0.3s both;
+    }
+    @media (max-width: 900px) {
+      .error-hero {
+        padding: 7rem 1.5rem 5rem;
+      }
+      .error-code {
+        font-size: clamp(5rem, 30vw, 10rem);
+      }
+    }
+  </style>
+  <script>
+    // Auto-redirect after 10 seconds
+    let countdown = 10;
+    function tick() {
+      const el = document.getElementById('countdown');
+      if (el) el.textContent = countdown;
+      if (countdown <= 0) {
+        window.location.href = 'index.html';
+      } else {
+        countdown--;
+        setTimeout(tick, 1000);
+      }
+    }
+    window.addEventListener('DOMContentLoaded', tick);
+  </script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Walsh Psychology &mdash; Home">
+      <picture>
+        <source srcset="walsh_logo_final.webp" type="image/webp">
+        <img src="walsh_logo_final.png" alt="Walsh Psychology" width="42" height="42">
+      </picture>
+      <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="forensic.html">Expert Witness</a></li>
+      <li><a href="ai.html">AI Consulting</a></li>
+      <li><a href="therapy.html">Psychotherapy</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a href="forensic.html">Expert Witness</a>
+    <a href="ai.html">AI Consulting</a>
+    <a href="therapy.html">Psychotherapy</a>
+    <a href="about.html">About</a>
+    <a href="articles.html">Articles</a>
+    <a href="contact.html" class="mobile-cta">Contact</a>
+  </div>
+
+  <script src="nav.js"></script>
+
+  <!-- 404 HERO -->
+  <section class="error-hero">
+    <div class="topo-bg" aria-hidden="true"></div>
+    <div class="error-code" aria-hidden="true">404</div>
+    <div class="error-content">
+      <p class="error-eyebrow">Error 404 &nbsp;&middot;&nbsp; Page Not Found</p>
+      <h1 class="error-title">This page seems to have<br><em>wandered off</em></h1>
+      <div class="error-divider" aria-hidden="true"></div>
+      <p class="error-body">
+        The page you&rsquo;re looking for doesn&rsquo;t exist, may have moved,
+        or was never here to begin with. You&rsquo;ll be redirected to the
+        home page in <strong id="countdown" style="color:var(--terra);">10</strong> seconds.
+      </p>
+      <div class="error-btns">
+        <a href="index.html" class="btn-primary">Return Home</a>
+        <a href="contact.html" class="btn-outline">Contact Dr. Walsh</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo" style="display:flex;align-items:center;gap:0.75rem;">
+      <picture>
+        <source srcset="walsh_logo_final.webp" type="image/webp">
+        <img src="walsh_logo_final.png" alt="Walsh Psychology" width="36" height="36" loading="lazy" style="height:36px;width:36px;object-fit:cover;border-radius:3px;opacity:0.85;">
+      </picture>
+      <div><strong>Dr. Laura L. Walsh</strong><br><span style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mist);opacity:0.6;">Clinical Psychologist &middot; Trinidad, CO</span></div>
+    </div>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav">
+        <li><a href="forensic.html">Expert Witness</a></li>
+        <li><a href="ai.html">AI Consulting</a></li>
+        <li><a href="therapy.html">Psychotherapy</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology &middot; Trinidad, CO</p>
+  </footer>
+
+</body>
+</html>
