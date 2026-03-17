@@ -72,6 +72,12 @@
   .contact-detail-label{font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(253,250,246,.6);margin-bottom:.3rem}
   .contact-detail-val{font-size:.95rem;color:var(--white)}
   .contact-detail-val a{color:var(--white);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+  .card--bridge{background:var(--deep);border-left:3px solid var(--terra);grid-column:1 / -1}
+  .card--bridge .card-number{color:var(--terra)}
+  .card--bridge h3{color:var(--sand)}
+  .card--bridge li{color:var(--mist)}
+  .card--bridge .bridge-link{display:inline-block;margin-top:1.5rem;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px}
+  .card--bridge .bridge-link:hover{opacity:.75}
   @media(max-width:900px){
     .page-hero{padding:8rem 1.5rem 4rem}
     .overview-grid{grid-template-columns:1fr;gap:2rem}
@@ -86,7 +92,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Dr. Laura L. Walsh Ã¢ÂÂ Forensic Psychology & Expert Witness",
+  "name": "Dr. Laura L. Walsh — Forensic Psychology & Expert Witness",
   "description": "Forensic psychology and expert witness services by Dr. Laura L. Walsh. Civil and employment matters, ADHD accommodations, suicide and wrongful death cases.",
   "url": "https://walshpsychology.com/forensic.html",
   "provider": {
@@ -115,23 +121,25 @@
     <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
   </a>
   <ul class="nav-links">
-    <li><a href="forensic.html" class="active">Expert Witness</a></li>
-    <li><a href="ai.html">AI Consulting</a></li>
-    <li><a href="therapy.html">Psychotherapy</a></li>
+    <li><a href="forensic.html" class="active">Forensic</a></li>
+    <li><a href="ai.html">AI Safety</a></li>
+    <li><a href="psychedelic.html">Psychedelic</a></li>
+    <li><a href="therapy.html">Clinical</a></li>
+    <li><a href="writing.html">Writing</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    <li><a href="work-with-me.html" class="nav-cta">Work With Me</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
   <main>
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <a href="forensic.html" onclick="closeMobileMenu()">Expert Witness</a>
-  <a href="ai.html" onclick="closeMobileMenu()">AI Consulting</a>
-  <a href="therapy.html" onclick="closeMobileMenu()">Psychotherapy</a>
+  <a href="forensic.html" onclick="closeMobileMenu()">Forensic</a>
+  <a href="ai.html" onclick="closeMobileMenu()">AI Safety</a>
+  <a href="psychedelic.html" onclick="closeMobileMenu()">Psychedelic</a>
+  <a href="therapy.html" onclick="closeMobileMenu()">Clinical</a>
+  <a href="writing.html" onclick="closeMobileMenu()">Writing</a>
   <a href="about.html" onclick="closeMobileMenu()">About</a>
-  <a href="articles.html">Articles</a>
-  <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()">Contact</a>
+  <a href="work-with-me.html" class="mobile-cta" onclick="closeMobileMenu()">Work With Me</a>
 </div>
 <script src="nav.js"></script>
 <section class="page-hero">
@@ -175,6 +183,20 @@
       <div class="card"><div class="card-number">01</div><div class="card-tags"><span class="tag">Emotional Distress</span><span class="tag">PTSD / Trauma</span><span class="tag">Mood &amp; Anxiety</span></div><h3>Psychological Injury in Civil &amp; Employment Cases</h3><ul><li>Assessment of alleged emotional distress and functional impairment linked to workplace events or civil wrongs</li><li>Distinguishing pre-existing conditions from incident-related symptoms</li><li>Opinions on diagnosis, severity, prognosis, and impact on work and daily functioning</li></ul></div>
       <div class="card"><div class="card-number">02</div><div class="card-tags"><span class="tag">Adult ADHD</span><span class="tag">Executive Function</span><span class="tag">ADA</span></div><h3>ADHD Accommodations &amp; Discrimination</h3><ul><li>Evaluation of adult ADHD and executive-function difficulties relevant to performance and safety</li><li>Analysis of alleged failures to accommodate ADHD in workplace or academic settings</li><li>Clarifying the relationship between ADHD symptoms, disciplinary actions, and claimed damages</li></ul></div>
       <div class="card"><div class="card-number">03</div><div class="card-tags"><span class="tag">Suicide Risk</span><span class="tag">Psychological Autopsy</span><span class="tag">Grief</span></div><h3>Suicide, Bereavement &amp; Wrongful Death</h3><ul><li>Evaluation of suicide risk and related clinical factors in civil and employment contexts</li><li>Consultation in wrongful death cases, including analysis of evidence relevant to suicide determination</li><li>Assessment of suicide bereavement and complicated grief reactions among survivors</li></ul></div>
+
+      <!-- ── AI HARM BRIDGE CARD ────────────────────────────────────────────── -->
+      <div class="card card--bridge">
+        <div class="card-number">&rarr;</div>
+        <h3>AI chatbot harm &amp; wrongful death cases</h3>
+        <ul>
+          <li>Litigation involving AI systems and psychological harm requires a specific combination of forensic expertise and active clinical knowledge of how AI systems fail to detect suicide risk</li>
+          <li>Dr. Walsh consults and testifies in matters where the central question is whether an AI system should have recognized a user in crisis and responded differently</li>
+          <li>Transcript analysis, standard-of-care opinions, and expert testimony available for plaintiff and defense counsel</li>
+        </ul>
+        <a href="ai-litigation.html" class="bridge-link">AI harm cases: expertise, services &amp; fit &rarr;</a>
+      </div>
+      <!-- ── END BRIDGE CARD ────────────────────────────────────────────────── -->
+
       <div class="card"><div class="card-number">04</div><div class="card-tags"><span class="tag">Alcohol / Drugs</span><span class="tag">Co-occurring Disorders</span></div><h3>Substance Use &amp; Co-Occurring Conditions</h3><ul><li>Assessment of substance use patterns and their role in claimed impairment or alleged misconduct</li><li>Parsing contributions of substance use versus trauma, mood, or ADHD to reported symptoms</li></ul></div>
     </div>
   </section>
@@ -246,12 +268,13 @@
   </div>
   <nav aria-label="Footer navigation">
     <ul class="footer-nav">
-      <li><a href="forensic.html">Expert Witness</a></li>
-      <li><a href="ai.html">AI Consulting</a></li>
-      <li><a href="therapy.html">Psychotherapy</a></li>
+      <li><a href="forensic.html">Forensic</a></li>
+      <li><a href="ai.html">AI Safety</a></li>
+      <li><a href="psychedelic.html">Psychedelic</a></li>
+      <li><a href="therapy.html">Clinical</a></li>
+      <li><a href="writing.html">Writing</a></li>
       <li><a href="about.html">About</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="work-with-me.html">Work With Me</a></li>
     </ul>
   </nav>
   <p class="footer-copy">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology &middot; Trinidad, CO</p>

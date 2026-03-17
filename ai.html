@@ -56,6 +56,12 @@
   .service-card ul{padding-left:1rem;margin-bottom:1.5rem}
   .service-card li{font-size:.85rem;line-height:1.75;color:var(--mist);margin-bottom:.35rem}
   .engagement-note{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(143,163,177,.6);margin-top:auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07)}
+  .litigation-card{background:var(--deep);border:1.5px solid var(--terra);padding:3rem;margin-top:3rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
+  .litigation-card-label{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:.75rem}
+  .litigation-card h3{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:var(--sand);margin-bottom:.75rem;line-height:1.2}
+  .litigation-card p{font-size:.87rem;line-height:1.8;color:var(--mist)}
+  .litigation-card-link{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px;white-space:nowrap;flex-shrink:0;align-self:center}
+  .litigation-card-link:hover{opacity:.75}
   .decision-strip{background:var(--terra);padding:5rem 4rem}
   .decision-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;margin-top:3rem}
   .decision-card{background:rgba(0,0,0,.15);padding:2rem}
@@ -68,14 +74,21 @@
   .closing h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3.5rem);font-weight:300;color:var(--cream);margin-bottom:1.5rem;line-height:1.2}
   .closing h2 em{font-style:italic;color:var(--sand)}
   .closing p{font-size:.95rem;color:var(--mist);line-height:1.85;margin-bottom:2.5rem}
-  @media(max-width:900px){.page-hero{padding:8rem 1.5rem 4rem}.problem-grid,.services-grid{grid-template-columns:1fr}.states-grid{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr 1fr}.decision-strip,.closing{padding:4rem 1.5rem}}
+  @media(max-width:900px){
+    .page-hero{padding:8rem 1.5rem 4rem}
+    .problem-grid,.services-grid{grid-template-columns:1fr}
+    .states-grid{grid-template-columns:1fr}
+    .decision-grid{grid-template-columns:1fr 1fr}
+    .decision-strip,.closing{padding:4rem 1.5rem}
+    .litigation-card{grid-template-columns:1fr;gap:1.5rem}
+  }
   </style>
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Dr. Laura L. Walsh Ã¢ÂÂ AI Suicide Risk Consulting",
+  "name": "Dr. Laura L. Walsh — AI Suicide Risk Consulting",
   "description": "AI suicide risk consulting by Dr. Laura L. Walsh. Helping technology organizations build safer systems through clinical expertise in suicide risk assessment.",
   "url": "https://walshpsychology.com/ai.html",
   "provider": {
@@ -84,14 +97,10 @@
     "jobTitle": "Licensed Clinical Psychologist",
     "url": "https://walshpsychology.com/"
   },
-  "serviceType": [
-    "AI Risk Consulting",
-    "Suicide Risk Assessment",
-    "Safety Design Advisory"
-  ]
+  "serviceType": ["AI Risk Consulting", "Suicide Risk Assessment", "Safety Design Advisory"]
 }
-    </script>
-  </head>
+  </script>
+</head>
 <body>
 <nav aria-label="Main navigation">
   <a href="index.html" class="nav-logo">
@@ -99,33 +108,38 @@
     <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
   </a>
   <ul class="nav-links">
-    <li><a href="forensic.html">Expert Witness</a></li>
-    <li><a href="ai.html" class="active">AI Consulting</a></li>
-    <li><a href="therapy.html">Psychotherapy</a></li>
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html" class="active">AI Safety</a></li>
+    <li><a href="psychedelic.html">Psychedelic</a></li>
+    <li><a href="therapy.html">Clinical</a></li>
+    <li><a href="writing.html">Writing</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    <li><a href="work-with-me.html" class="nav-cta">Work With Me</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
-  <main>
+<main>
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <a href="forensic.html" onclick="closeMobileMenu()">Expert Witness</a>
-  <a href="ai.html" onclick="closeMobileMenu()">AI Consulting</a>
-  <a href="therapy.html" onclick="closeMobileMenu()">Psychotherapy</a>
+  <a href="forensic.html" onclick="closeMobileMenu()">Forensic</a>
+  <a href="ai.html" onclick="closeMobileMenu()">AI Safety</a>
+  <a href="psychedelic.html" onclick="closeMobileMenu()">Psychedelic</a>
+  <a href="therapy.html" onclick="closeMobileMenu()">Clinical</a>
+  <a href="writing.html" onclick="closeMobileMenu()">Writing</a>
   <a href="about.html" onclick="closeMobileMenu()">About</a>
-  <a href="articles.html">Articles</a>
-  <a href="contact.html" class="mobile-cta" onclick="closeMobileMenu()">Contact</a>
+  <a href="work-with-me.html" class="mobile-cta" onclick="closeMobileMenu()">Work With Me</a>
 </div>
 <script src="nav.js"></script>
+
 <section class="page-hero">
   <div class="hero-content">
-    <p class="page-eyebrow">AI Risk Consulting &nbsp;&middot;&nbsp; Suicide Risk &nbsp;&middot;&nbsp; High-Risk Decision States</p>
+    <p class="page-eyebrow">AI Safety Consulting &nbsp;&middot;&nbsp; Suicide Risk &nbsp;&middot;&nbsp; High-Risk Decision States</p>
     <h1 class="page-title">LLMs read words.<br><em>Risk lies beyond them.</em></h1>
     <p class="page-subtitle">AI systems can sound competent about suicide &mdash; while missing the risk entirely. Identifying where and why is the work.</p>
   </div>
 </section>
-<div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">&middot;</span><span>AI Risk Consulting</span></div>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">&middot;</span><span>AI Safety Consulting</span></div>
+
 <div class="content-wrap">
   <section class="section" id="problem">
     <span class="section-label">The Problem</span>
@@ -147,6 +161,7 @@
       </div>
     </div>
   </section>
+
   <section class="section" id="approach">
     <span class="section-label">What I Evaluate</span>
     <h2 class="section-title">High-risk psychological states<br><em>your system may be misreading</em></h2>
@@ -159,10 +174,23 @@
     </div>
   </section>
 </div>
+
 <section style="background:var(--deep);padding:5rem 0;" id="services">
   <div class="content-wrap">
     <span class="section-label" style="color:var(--terra);">Services</span>
     <h2 class="section-title" style="color:var(--cream);">Practical, safety-focused consulting<br><em style="color:var(--sand);">for AI teams building in high-stakes spaces</em></h2>
+
+    <!-- ── LITIGATION CALLOUT ──────────────────────────────────────────────── -->
+    <div class="litigation-card">
+      <div>
+        <div class="litigation-card-label">If something has already happened</div>
+        <h3>AI chatbot harm &amp; wrongful death cases</h3>
+        <p>Transcript analysis, standard-of-care opinions, and expert witness testimony for AI harm and wrongful death matters &mdash; available for plaintiff and defense counsel. This work sits at the intersection of Dr. Walsh's forensic practice and her AI consulting expertise, and is the engagement type most directly relevant to active litigation.</p>
+      </div>
+      <a href="ai-litigation.html" class="litigation-card-link">AI harm cases: expertise &amp; fit &rarr;</a>
+    </div>
+    <!-- ── END LITIGATION CALLOUT ─────────────────────────────────────────── -->
+
     <div class="services-grid">
       <div class="service-card"><div class="service-num">01</div><h3>AI Risk Review</h3><p>Identify where your system misses high-risk users.</p><ul><li>Review of 25&ndash;50 interactions or scenarios</li><li>Identification of missed risk and false reassurance</li><li>Analysis of over/under escalation patterns</li><li>Clear, actionable recommendations</li></ul><div class="engagement-note">Fixed-scope review &mdash; 3&ndash;5 page report + optional consult call</div></div>
       <div class="service-card"><div class="service-num">02</div><h3>Failure Mode &amp; Red Teaming</h3><p>Find where your system breaks under real psychological conditions.</p><ul><li>Scenario-based stress testing &mdash; high-risk, ambiguous, edge-case</li><li>Identification of vulnerabilities and misclassification patterns</li><li>Examples of high-risk misses with clear explanations</li><li>Targeted recommendations to improve safety</li></ul><div class="engagement-note">Defined project scope tailored to your system</div></div>
@@ -171,6 +199,7 @@
     </div>
   </div>
 </section>
+
 <section class="decision-strip">
   <div style="max-width:1200px;margin:0 auto;">
     <span class="section-label" style="color:rgba(253,250,246,.7);">How to Choose</span>
@@ -179,11 +208,12 @@
       <div class="decision-card"><div class="decision-if">If you have a</div><div class="decision-cond">New or early-stage system</div><div class="decision-then">&rarr; Start with AI Risk Review</div></div>
       <div class="decision-card"><div class="decision-if">If you are</div><div class="decision-cond">Preparing to launch or scale</div><div class="decision-then">&rarr; Failure Mode &amp; Red Teaming</div></div>
       <div class="decision-card"><div class="decision-if">If you are</div><div class="decision-cond">Already live and improving</div><div class="decision-then">&rarr; Safety Design &amp; Advisory</div></div>
-      <div class="decision-card"><div class="decision-if">If</div><div class="decision-cond">Something went wrong</div><div class="decision-then">&rarr; AI Harm &amp; Expert Review</div></div>
+      <div class="decision-card"><div class="decision-if">If</div><div class="decision-cond">Something went wrong</div><div class="decision-then">&rarr; <a href="ai-litigation.html" style="color:var(--sand);text-decoration:underline;">AI Harm Cases</a></div></div>
     </div>
     <p style="margin-top:2rem;font-size:.92rem;color:rgba(253,250,246,.75);font-style:italic;">Not sure where to start? Your system likely has blind spots worth examining. <a href="mailto:laura@walshpsychology.com?subject=AI%20Risk%20Consulting%20Inquiry" style="color:var(--white);text-decoration:underline;">Let's talk.</a></p>
   </div>
 </section>
+
 <section class="closing">
   <div class="closing-inner">
     <h2>AI systems don't fail because<br><em>they lack information.</em></h2>
@@ -191,20 +221,22 @@
     <a href="mailto:laura@walshpsychology.com?subject=AI%20Risk%20Consulting%20Inquiry" class="btn-terra" aria-label="Request an AI risk consulting session with Dr. Walsh">Request a Consult</a>
   </div>
 </section>
+
 </main>
-  <footer>
+<footer>
   <div class="footer-logo">
     <img src="walsh_logo_final.png" alt="Walsh Psychology" width="32" height="32" style="height:32px;width:32px;object-fit:cover;border-radius:3px;opacity:.8;">
     <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist &middot; Trinidad, CO</span></div>
   </div>
   <nav aria-label="Footer navigation">
     <ul class="footer-nav">
-      <li><a href="forensic.html">Expert Witness</a></li>
-      <li><a href="ai.html">AI Consulting</a></li>
-      <li><a href="therapy.html">Psychotherapy</a></li>
+      <li><a href="forensic.html">Forensic</a></li>
+      <li><a href="ai.html">AI Safety</a></li>
+      <li><a href="psychedelic.html">Psychedelic</a></li>
+      <li><a href="therapy.html">Clinical</a></li>
+      <li><a href="writing.html">Writing</a></li>
       <li><a href="about.html">About</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="work-with-me.html">Work With Me</a></li>
     </ul>
   </nav>
   <p class="footer-copy">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology &middot; Trinidad, CO</p>
