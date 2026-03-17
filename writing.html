@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b2d4a">
+  <meta name="robots" content="index, follow">
+  <title>Writing & Speaking | Dr. Laura L. Walsh</title>
+  <meta name="description" content="Writing, research, and speaking by Dr. Laura L. Walsh — clinical psychologist and AI risk consultant. Essays on AI suicide risk, forensic psychology, and psychedelic medicine.">
+  <link rel="canonical" href="https://walshpsychology.com/writing.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://walshpsychology.com/writing.html">
+  <meta property="og:title" content="Writing & Speaking | Dr. Laura L. Walsh">
+  <meta property="og:description" content="Writing, research, and speaking by Dr. Laura L. Walsh — clinical psychologist and AI risk consultant.">
+  <meta property="og:image" content="https://walshpsychology.com/laura_square_headshot.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@walshpsychology">
+  <meta name="twitter:title" content="Writing & Speaking | Dr. Laura L. Walsh">
+  <meta name="twitter:description" content="Writing, research, and speaking by Dr. Laura L. Walsh — clinical psychologist and AI risk consultant.">
+  <meta name="twitter:image" content="https://walshpsychology.com/laura_square_headshot.webp">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="walsh_logo_final.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  .page-hero{min-height:52vh;background:#1b2d4a;display:flex;flex-direction:column;justify-content:flex-end;padding:10rem 4rem 5rem;position:relative;overflow:hidden}
+  .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 40%,rgba(184,92,56,.12) 0%,transparent 65%)}
+  .page-hero-content{position:relative;z-index:1;max-width:800px}
+  .page-eyebrow{font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:1.2rem}
+  .page-title{font-family:var(--serif);font-size:clamp(2.8rem,5vw,5.5rem);font-weight:300;color:var(--cream);line-height:1.05;margin-bottom:1.5rem}
+  .page-title em{font-style:italic;color:var(--sand)}
+  .page-subtitle{font-family:var(--serif);font-size:1.2rem;font-weight:300;font-style:italic;color:var(--mist);max-width:580px;line-height:1.7}
+
+  /* Featured article */
+  .featured-article{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:start;padding:5rem 0;border-bottom:1px solid rgba(30,45,61,.08)}
+  .featured-label{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);display:block;margin-bottom:.75rem}
+  .featured-title{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--slate);line-height:1.15;margin-bottom:1rem}
+  .featured-title em{font-style:italic;color:var(--terra)}
+  .featured-meta{font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mist);margin-bottom:1.5rem}
+  .featured-body{font-size:.95rem;line-height:1.9;color:#445566;margin-bottom:1.5rem}
+  .featured-link{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px}
+  .featured-link:hover{opacity:.75}
+  .featured-aside{background:var(--slate);padding:2.5rem}
+  .featured-aside-label{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem}
+  .featured-aside h3{font-family:var(--serif);font-size:1.1rem;font-weight:300;color:var(--sand);margin-bottom:1rem;line-height:1.4}
+  .featured-aside p{font-size:.85rem;line-height:1.75;color:var(--mist);margin-bottom:1.5rem}
+
+  /* Substack section */
+  .substack-strip{background:var(--sand);padding:5rem 0}
+  .substack-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+  .substack-title{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--slate);line-height:1.15;margin-bottom:1rem}
+  .substack-title em{font-style:italic;color:var(--terra)}
+  .substack-body{font-size:.95rem;line-height:1.9;color:#445566;margin-bottom:2rem}
+  .substack-cta{display:inline-block;font-size:.78rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:.9rem 2rem;background:var(--terra);color:var(--white);text-decoration:none;border-radius:2px;transition:background .2s}
+  .substack-cta:hover{background:#a04d2f}
+  .substack-tag{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .7rem;background:rgba(30,45,61,.1);color:var(--slate);border-radius:2px;display:inline-block;margin-bottom:.5rem}
+
+  /* Published work */
+  .pub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5px;margin-top:3rem}
+  .pub-card{background:var(--cream);padding:2.5rem;position:relative;overflow:hidden;transition:transform .25s}
+  .pub-card:hover{transform:translateY(-2px)}
+  .pub-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--terra);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+  .pub-card:hover::after{transform:scaleX(1)}
+  .pub-type{font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:.75rem}
+  .pub-card h3{font-family:var(--serif);font-size:1.25rem;font-weight:400;color:var(--slate);margin-bottom:.5rem;line-height:1.3}
+  .pub-card .pub-meta{font-size:.78rem;color:var(--mist);margin-bottom:1rem;line-height:1.6}
+  .pub-card p{font-size:.87rem;line-height:1.75;color:#556070}
+  .pub-card .pub-link{display:inline-block;margin-top:1.25rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px}
+  .pub-card .pub-link:hover{opacity:.75}
+  .pub-award{display:inline-block;margin-top:1rem;font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .75rem;background:rgba(184,92,56,.1);color:var(--terra);border-radius:2px}
+
+  /* Speaking */
+  .speaking-strip{background:var(--deep);padding:5rem 0}
+  .speaking-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:start;margin-top:3rem}
+  .speaking-body{font-size:.95rem;line-height:1.9;color:var(--mist);margin-bottom:2rem}
+  .topic-list{list-style:none;padding:0}
+  .topic-list li{padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.88rem;color:var(--mist);line-height:1.6;display:flex;align-items:flex-start;gap:.75rem}
+  .topic-list li:last-child{border-bottom:none}
+  .topic-icon{color:var(--terra);flex-shrink:0}
+  .speaking-aside{background:var(--slate);padding:2.5rem}
+  .speaking-aside h3{font-family:var(--serif);font-size:1.2rem;font-weight:300;color:var(--sand);margin-bottom:1rem}
+  .speaking-aside p{font-size:.87rem;line-height:1.75;color:var(--mist);margin-bottom:1.5rem}
+
+  @media(max-width:900px){
+    .page-hero{padding:8rem 1.5rem 4rem}
+    .featured-article,.substack-inner,.speaking-grid{grid-template-columns:1fr;gap:2.5rem}
+    .pub-grid{grid-template-columns:1fr}
+    .substack-strip,.speaking-strip{padding:4rem 0}
+  }
+  </style>
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="38" height="38" style="height:38px;width:38px;object-fit:cover;border-radius:3px;">
+    <div class="nav-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="ai.html">AI Safety</a></li>
+    <li><a href="psychedelic.html">Psychedelic</a></li>
+    <li><a href="therapy.html">Clinical</a></li>
+    <li><a href="writing.html" class="active">Writing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work-with-me.html" class="nav-cta">Work With Me</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="forensic.html" onclick="closeMobileMenu()">Forensic</a>
+  <a href="ai.html" onclick="closeMobileMenu()">AI Safety</a>
+  <a href="psychedelic.html" onclick="closeMobileMenu()">Psychedelic</a>
+  <a href="therapy.html" onclick="closeMobileMenu()">Clinical</a>
+  <a href="writing.html" onclick="closeMobileMenu()">Writing</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="work-with-me.html" class="mobile-cta" onclick="closeMobileMenu()">Work With Me</a>
+</div>
+<script src="nav.js"></script>
+
+<section class="page-hero">
+  <div class="topo-bg" aria-hidden="true"></div>
+  <div class="page-hero-content">
+    <p class="page-eyebrow">Writing &nbsp;&middot;&nbsp; Research &nbsp;&middot;&nbsp; Speaking</p>
+    <h1 class="page-title">Writing at the edge<br><em>of what psychology knows.</em></h1>
+    <p class="page-subtitle">On AI suicide risk, forensic practice, psychedelic medicine, and the clinical questions that don&rsquo;t have easy answers yet.</p>
+  </div>
+</section>
+
+<div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">&middot;</span><span>Writing &amp; Speaking</span></div>
+
+<div class="content-wrap">
+
+  <!-- FEATURED ARTICLE -->
+  <div class="featured-article">
+    <div>
+      <span class="featured-label">Featured Essay</span>
+      <h2 class="featured-title">Why AI Gets Suicide Risk Wrong</h2>
+      <p class="featured-meta">REFRAMED &nbsp;&middot;&nbsp; March 2026 &nbsp;&middot;&nbsp; Self-published</p>
+      <p class="featured-body">AI suicide detection systems treat risk as a language classification problem &mdash; flag the right words, trigger the right response. Clinically, suicide risk is a state transition problem. Risk lies in the trajectory, not in any one sentence. Language often becomes quieter and flatter as risk peaks, not louder. The gap between what AI systems are designed to detect and what a trained clinician recognizes as elevated risk is the central problem in AI safety for mental health applications.</p>
+      <p class="featured-body">This essay introduces a framework of six clinical signals &mdash; including narrative closure, cognitive rigidity, and emotional flattening &mdash; that AI systems currently miss and that point toward a more clinically grounded approach to detection.</p>
+      <a href="https://www.reframedself.com/p/why-ai-gets-suicide-risk-wrong" target="_blank" rel="noopener noreferrer" class="featured-link">Read the full essay &rarr;</a>
+    </div>
+    <div class="featured-aside">
+      <div class="featured-aside-label">Why this matters</div>
+      <h3>The standard of care for AI suicide risk detection is being defined right now.</h3>
+      <p>Wrongful death suits involving AI chatbots are working through federal courts. New state laws are mandating suicide risk protocols for companion AI systems. The clinical literature on what these systems should do is sparse.</p>
+      <p>This essay is a contribution to that conversation &mdash; written from 20 years of clinical practice in suicidality, not from a machine learning lab.</p>
+      <a href="ai.html" class="featured-link">AI safety consulting &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- SUBSTACK -->
+<section class="substack-strip">
+  <div class="content-wrap">
+    <div class="substack-inner">
+      <div>
+        <span class="section-label">Ongoing Publication</span>
+        <h2 class="substack-title">REFRAMED<br><em>by Dr. Laura L. Walsh</em></h2>
+        <p class="substack-body">A Substack publication at the intersection of clinical psychology, emerging technology, and the questions practitioners don&rsquo;t always get to ask out loud. Professional pieces on AI risk, forensic psychology, and psychedelic medicine &mdash; alongside essays on grief, widowhood, and the inner life of clinical work.</p>
+        <p class="substack-body">Written for clinicians, researchers, attorneys, and anyone who wants to think carefully about where psychology is going.</p>
+        <a href="https://www.reframedself.com" target="_blank" rel="noopener noreferrer" class="substack-cta">Visit REFRAMED &rarr;</a>
+      </div>
+      <div>
+        <div style="margin-bottom:1.5rem">
+          <span class="substack-tag">Professional Pieces</span>
+          <p style="font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--slate);margin:.5rem 0 .4rem;line-height:1.3;">Why AI Gets Suicide Risk Wrong</p>
+          <p style="font-size:.82rem;color:#667788;line-height:1.6;">On the clinical gap between what AI detects and what actually signals elevated risk &mdash; and what that means for the systems being deployed at scale.</p>
+        </div>
+        <div style="border-top:1px solid rgba(30,45,61,.12);padding-top:1.5rem">
+          <span class="substack-tag">On Grief &amp; Loss</span>
+          <p style="font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--slate);margin:.5rem 0 .4rem;line-height:1.3;">Writing from the inside out</p>
+          <p style="font-size:.82rem;color:#667788;line-height:1.6;">Personal essays on widowhood, grief, suicide loss, and the experience of being both a clinician and a person who has lived through the things she treats.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLISHED WORK -->
+<div class="content-wrap">
+  <section class="section" id="published">
+    <span class="section-label">Published Work</span>
+    <h2 class="section-title">Research &amp; academic<br><em>contributions</em></h2>
+    <p class="section-body">Published under the name Laura Linebarger, PsyD prior to 2020.</p>
+    <div class="pub-grid">
+      <div class="pub-card">
+        <div class="pub-type">Book Chapter</div>
+        <h3>Chapter contributor &mdash; <em>Real Life: The Hands-on Pounds-off Guide</em></h3>
+        <p class="pub-meta">TOPS Club Inc., 2013 &nbsp;&middot;&nbsp; Laura Linebarger, PsyD</p>
+        <p>A 300-page clinically grounded guide to sustainable weight loss and healthy lifestyle change, published by TOPS (Take Off Pounds Sensibly). Dr. Walsh contributed a chapter drawing on her clinical expertise in addiction, behavioral change, and the psychology of eating.</p>
+        <a href="https://www.amazon.com/Real-Life-Hands-Pounds-off-Guide/dp/1939560004" target="_blank" rel="noopener noreferrer" class="pub-link">View on Amazon &rarr;</a>
+      </div>
+      <div class="pub-card">
+        <div class="pub-type">Clinical Research Project</div>
+        <h3><em>Addiction Factors Within Obesity</em></h3>
+        <p class="pub-meta">Illinois School of Professional Psychology, 2013 &nbsp;&middot;&nbsp; Laura Linebarger, PsyD</p>
+        <p>Original empirical research examining the overlap between addictive processes and obesity, including the psychological, behavioral, and neurobiological factors that link compulsive eating to substance use disorders. Published through Lulu Press.</p>
+        <div class="pub-award">Emerging Scholar Award &mdash; Best Clinical Research Project, ISPP</div>
+        <div class="pub-award" style="margin-left:.4rem">Illinois Psychological Association Award</div>
+        <div class="pub-award" style="margin-left:.4rem">American Psychological Association Award</div>
+        <a href="https://www.lulu.com/fr/shop/laura-a-linebarger/addiction-factors-within-obesity/ebook/product-1m4nqgd5.html" target="_blank" rel="noopener noreferrer" class="pub-link">View publication &rarr;</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- SPEAKING -->
+<section class="speaking-strip">
+  <div class="content-wrap">
+    <span class="section-label" style="color:var(--terra);">Speaking &amp; Media</span>
+    <h2 class="section-title" style="color:var(--cream);">Available for conferences,<br><em style="color:var(--sand);">panels, and media.</em></h2>
+    <div class="speaking-grid">
+      <div>
+        <p class="speaking-body">Dr. Walsh speaks to professional and lay audiences on the clinical questions at the center of her practice &mdash; AI suicide risk, forensic psychology, psychedelic medicine, and the psychology of grief and loss. She brings 20 years of clinical experience and an unusual ability to make complex psychological concepts accessible without losing their precision.</p>
+        <p class="speaking-body">Formats include conference keynotes and panels, clinical training programs, podcast appearances, and media commentary. Inquiries welcome.</p>
+        <ul class="topic-list">
+          <li><span class="topic-icon">&rarr;</span>AI suicide risk detection &mdash; where systems fail and what clinical expertise requires</li>
+          <li><span class="topic-icon">&rarr;</span>Forensic psychology and AI chatbot harm litigation</li>
+          <li><span class="topic-icon">&rarr;</span>Suicide risk in psychedelic medicine settings</li>
+          <li><span class="topic-icon">&rarr;</span>The psychology of grief, suicide loss, and bereavement</li>
+          <li><span class="topic-icon">&rarr;</span>ADHD, addiction, and complex adult psychopathology</li>
+        </ul>
+      </div>
+      <div class="speaking-aside">
+        <h3>Reach out about a speaking engagement</h3>
+        <p>Include a brief description of the event or format, audience, and timeline. Dr. Walsh is based in Trinidad, Colorado and speaks both in person and remotely.</p>
+        <a href="mailto:laura@walshpsychology.com?subject=Speaking%20Inquiry" style="display:inline-block;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);text-decoration:none;border-bottom:1px solid var(--terra);padding-bottom:2px;">Email Dr. Walsh &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="footer-logo">
+    <img src="walsh_logo_final.png" alt="Walsh Psychology" width="32" height="32" style="height:32px;width:32px;object-fit:cover;border-radius:3px;opacity:.8;">
+    <div class="footer-logo-text">Dr. Laura L. Walsh<span>Clinical Psychologist &middot; Trinidad, CO</span></div>
+  </div>
+  <nav aria-label="Footer navigation">
+    <ul class="footer-nav">
+      <li><a href="forensic.html">Forensic</a></li>
+      <li><a href="ai.html">AI Safety</a></li>
+      <li><a href="psychedelic.html">Psychedelic</a></li>
+      <li><a href="therapy.html">Clinical</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work-with-me.html">Work With Me</a></li>
+    </ul>
+  </nav>
+  <p class="footer-copy">&copy; 2026 Dr. Laura L. Walsh &middot; Walsh Psychology &middot; Trinidad, CO</p>
+</footer>
+</body>
+</html>
